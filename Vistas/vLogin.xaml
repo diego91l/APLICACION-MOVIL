@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DANAMISETS3.Vistas.vLogin"
+             Title="vLogin">
+    
+    <VerticalStackLayout Padding="0" Spacing="10">
+        
+        <Label 
+            Text="Aplicacion de Notas"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+
+        <Image Source="https://www.uisrael.edu.ec/wp-content/uploads/2023/01/logo-uisrael@2x-e1674848533171.png"
+            HeightRequest="100"/>
+
+
+        <Grid RowSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Usuario"
+                   FontSize="20"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                   Margin="10,0,0,0"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+
+            <Entry x:Name="txtUsuario"
+                   Placeholder="Digite Usuario"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="FillAndExpand" 
+                   Margin="10,0,0,0"
+                   MaxLength="7"
+                   Grid.Row="0"
+                   Grid.Column="1"/>
+
+            <Label Text="Contraseña"
+                   FontSize="20"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="StartAndExpand"
+                   Margin="10,0,0,0"
+                   Grid.Row="1"
+                   Grid.Column="0"/>
+
+            <Entry x:Name="txtContrasena"
+                   Placeholder="Digite Contraseña"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="FillAndExpand" 
+                   Margin="10,0,0,0"
+                   MaxLength="10"
+                   Grid.Row="1"
+                   Grid.Column="1"/>
+
+            <Button x:Name="btbInicio"
+                    Text="Iniciar Sesion"
+                    Clicked="btbInicio_Clicked"
+                    WidthRequest="150"
+                    BackgroundColor="#58D68D" 
+                    TextColor="White" 
+                    FontAttributes="Bold" 
+                    CornerRadius="30"
+                    Margin="10,50,0,0"
+                    Padding="0"
+                    Grid.Row="2"
+                    Grid.Column="0"/>
+
+
+            <Button x:Name="btnRegistro"
+                    BackgroundColor="#58D68D" 
+                    TextColor="White" 
+                    FontAttributes="Bold" 
+                    CornerRadius="30"
+                    Margin="10,50,0,0"
+                    Text="Registrar"
+                    Clicked="btnRegistro_Clicked"
+                    WidthRequest="150"
+                    Grid.Row="2"
+                    Grid.Column="1"/>
+            
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

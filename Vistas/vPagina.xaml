@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DANAMISETS3.Vistas.vPagina"
+             Title="vPagina">
+    <VerticalStackLayout>
+    <Label x:Name="lblUsuario"
+           TextColor="Red"
+           FontSize="13"
+           HorizontalTextAlignment="Start"/>
+
+
+    <Label 
+        Text="Sistema de calificaciones Ver. 1.1"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center"
+     />
+
+    <Image Source="https://www.uisrael.edu.ec/wp-content/uploads/2023/01/logo-uisrael@2x-e1674848533171.png"
+     HeightRequest="50"
+     />
+
+
+    <Picker x:Name="pkseleccion" Title="Estudiantes">
+        <Picker.Items>
+            <x:String>Antonio Paucar</x:String>
+            <x:String>Karla Rosero</x:String>
+            <x:String>Juan Lopez</x:String>
+            <x:String>Fracisco Campos</x:String>
+            <x:String>Kelly Diaz</x:String>
+        </Picker.Items>
+    </Picker>
+    
+   
+ <Label 
+ Text="Calificaciones Seguimiento 1"
+ HorizontalTextAlignment="Start"
+ FontSize="15"
+ TextColor="Blue"
+  Margin="0,0,0,10" 
+ />
+  
+ <Entry x:Name="txtSeguimiento1" 
+    Placeholder="Nota seguimiento 1"
+     Keyboard="Numeric"
+        Margin="0,0,0,10" 
+        
+    />
+<Entry x:Name="txtExamen1" 
+    Placeholder="Nota seguimiento 1"
+     Keyboard="Numeric"
+       Margin="0,0,0,10" 
+ />       
+
+    <Label x:Name="lblPromedio1" Text="Promedio Parcial 1:" />
+
+    <Button 
+         x:Name="btnSeguimiento1"
+        Text="Calcular seguimiento 1"
+        Clicked="btnSeguimiento1_Clicked"
+        WidthRequest="200"
+        HeightRequest="40"
+     />
+
+    <Label 
+        Text="Calificaciones Seguimiento 2"
+        HorizontalTextAlignment="Start"
+        FontSize="15"
+       TextColor="Blue"
+        
+        Margin="0,0,0,10" 
+        />
+
+    <Entry x:Name="txtSeguimiento2" 
+        Placeholder="Nota seguimiento 2"
+           
+         Keyboard="Numeric"
+         Margin="0,0,0,10" 
+           
+          />
+
+    <Entry x:Name="txtExamen2" 
+         Placeholder="Nota seguimiento 2"
+         Keyboard="Numeric"
+           Margin="0,0,0,10" 
+       />
+
+    <Label x:Name="lblPromedio2" Text="Promedio Parcial 1:" />
+
+
+    <Button 
+        x:Name="btnSeguimiento2"
+         Text="Calcular Seguimiento 2"
+         Clicked="btnSeguimiento2_Clicked"
+         WidthRequest="200"
+        HeightRequest="40"
+      />
+
+
+    <Label x:Name="lblPromedioSemestre" Text="Promedio Semestre:" />
+    <Label x:Name="lblEstadoSemestre" Text="Estado Semestre:" />
+
+    <DatePicker x:Name="datePicker" />
+
+    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+        <Button x:Name="btnInforme"
+        Text="Informe"
+        Clicked="btnInforme_Clicked_1"
+        Margin="0,0,10,0" />
+
+        <Button x:Name="btnNuevo"
+        Text="Nuevo"
+        Clicked="btnNuevo_Clicked"
+        Margin="10,0,0,0" />
+    </StackLayout>
+
+
+
+</VerticalStackLayout>
+</ContentPage>
